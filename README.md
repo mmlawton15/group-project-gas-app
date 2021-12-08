@@ -21,3 +21,4 @@ SO I can save money
 WHEN I open the app
 I CAN input my current Zipcode
 ONCE my zipcode is submitted, I am presented with a list of nearby gas stations
+THESE gas stations have prices of gas listed next to them and a descriptive title
