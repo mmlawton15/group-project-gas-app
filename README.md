@@ -11,3 +11,13 @@
 
 ## What does it look like?
 
+
+## USER STORY
+AS someone who drives alot for work
+I WANT to know where to buy the cheapest gas
+SO I can save money
+
+## ACCEPTANCE CRITERIA
+WHEN I open the app
+I CAN input my current Zipcode
+ONCE my zipcode is submitted, I am presented with a list of nearby gas stations
