@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gas Results</title>
-    <link src="assets/style2.css" />
+    <link src="./assets/style2.css" />
 </head>
 <body>
-    <div class="gasStationStyle">
-        <h1>Results</h1>
+    <input id="searchBox"
+    id="searchBar"
+    class="searchbar"
+    type="text"
+    placeholder="Search"
+  />
+  <a id="btnSearch" class="btn-search"><i class="fa fa-search"></i></a>
+
+    <div id="container" class="gasStationStyle">
+        <h1>Gas Stations In Your Area</h1>
+            <div class="gasStations" id=""></div>
     </div>
-    <div class="gasStationStyle"></div>
-    <div class="gasStationStyle"></div>
-    <div class="gasStationStyle"></div>
-    <div class="gasStationStyle"></div>
-        
+    
 </body>
 </html>
