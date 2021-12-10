@@ -1,3 +1,5 @@
+
+/*ELEMENT STYLING*/
 body {
   display: flex;
   flex-direction: column;
@@ -32,6 +34,8 @@ body {
   transition: 0.3s;
 }
 
+
+/*ANIMATION FOR SEARCHBAR*/
 .searchbar::placeholder {
   color: white;
   font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial,
@@ -39,8 +43,6 @@ body {
   font-size: 1em;
   font-weight: bold;
 }
-
-
 
 .searchbar:focus {
   width: 400px;
@@ -54,9 +56,8 @@ body {
 }
 
 
+
 /*BUTTON STYLING*/
-
-
 .btn-search {
   cursor: pointer;
   color: white;
@@ -67,8 +68,6 @@ body {
   padding-top: 5px;
   margin-right: 40px;
 }
-
-
 
 .buttonStyle {
   font-family: "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
