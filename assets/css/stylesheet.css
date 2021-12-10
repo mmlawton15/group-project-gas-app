@@ -1,3 +1,5 @@
+/*STYLESHEET FOR THE INDEX.HTML PAGE*/
+
 
 /*ELEMENT STYLING*/
 body {
@@ -33,6 +35,8 @@ body {
   border-bottom: white solid 2px;
   transition: 0.3s;
 }
+
+
 
 
 /*ANIMATION FOR SEARCHBAR*/

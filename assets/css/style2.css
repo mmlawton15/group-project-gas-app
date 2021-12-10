@@ -1,11 +1,15 @@
-/*MM IS WORKING ON THIS*/
+/*STYLE SHEET FOR THE RESULTS.HTML PAGE*/
 
+
+/*VARIABLES FOR COLORS INCASE THEY NEED TO BE EASILY CHANGED*/
 :root {
     --primary-color:#d03237;
     --secondary-color: white;
     --tertiary-color: black;
 }
 
+
+/*BODY STYLE*/
 body {
     background-color: var(--primary-color);
     display: flex;
@@ -26,8 +30,10 @@ body {
     align-items: center;
   }
 
+
+/*DIV CLASS FOR GAS STATION RESULTS NEARBY*/
 .gasStationResults {
-    background-color: white;
+    background-color: var(--secondary-color);
     width: 40%;
     height: 65px;
     border-radius: 25px;
