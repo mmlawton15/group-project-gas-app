@@ -40,6 +40,8 @@ body {
   font-weight: bold;
 }
 
+
+
 .searchbar:focus {
   width: 400px;
   font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial,
@@ -51,6 +53,10 @@ body {
   outline: none;
 }
 
+
+/*BUTTON STYLING*/
+
+
 .btn-search {
   cursor: pointer;
   color: white;
@@ -60,4 +66,16 @@ body {
   font-size: 1.5em;
   padding-top: 5px;
   margin-right: 40px;
+}
+
+
+
+.buttonStyle {
+  font-family: "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color:black;
+  border:none;
+  background-color: #d03237;
+  font-weight: bold;
+  font-size: 25px;
 }
