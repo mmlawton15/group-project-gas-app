@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gas Results</title>
-    <link rel="stylesheet" href="assets/style2.css" />
+    <link rel="stylesheet" href="assets/css/style2.css" />
 </head>
 <body>
-    <input id="searchBox"
-    id="searchBar"
-    class="searchbar"
-    type="text"
-    placeholder="Search"
-  />
-  <a id="btnSearch" class="btn-search"><i class="fa fa-search"></i></a>
+  <section class="container">
+    <h1>Search Another Zip:</h1>
+    <div class="container">
+      <input id="searchBar" class="searchbar" type="text"/>
+      <a id="btnSearch" class="buttonStyle" href="results.html">Go!</a>
+    </div>
+  </section>
 
 
 <!--RESULTS AREA OF PAGE-->
     <div id="container" class="gasStationStyle">
-        <h1>Gas Stations In Your Area</h1>
+        <h1>Gas Stations In Your Area</h1><br>
+        <h4 class="alertClass">ALERT! Will use Javascript here to alert about weather conditions</h4>
         <div class="gasStationResults" id=""></div>
         <div class="gasStationResults" id=""></div>
         <div class="gasStationResults" id=""></div>
