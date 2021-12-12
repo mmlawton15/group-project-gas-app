@@ -11,7 +11,9 @@
   <section class="container">
     <h1>Search Another Zip:</h1>
     <div class="container">
-      <input id="searchBar" class="searchbar" type="text"/>
+      <form>
+        <input id="searchBar" class="searchBar" type="text"/>
+      </form>
       <a id="btnSearch" class="buttonStyle" href="results.html">Go!</a>
     </div>
   </section>
@@ -20,7 +22,7 @@
 <!--RESULTS AREA OF PAGE-->
     <div id="container" class="gasStationStyle">
         <h1>Gas Stations In Your Area</h1><br>
-        <h4 class="alertClass">ALERT! Will use Javascript here to alert about weather conditions</h4>
+        <h4 class="alertClass" id="alertField">ALERT!</h4>
         <div class="gasStationResults" id=""></div>
         <div class="gasStationResults" id=""></div>
         <div class="gasStationResults" id=""></div>
@@ -29,6 +31,6 @@
     </div>
     
 
-    
+<script src="assets/js/script.js"></script>
 </body>
 </html>

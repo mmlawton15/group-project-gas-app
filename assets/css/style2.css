@@ -45,7 +45,7 @@ body {
 }
 
 /*STLYE FOR SEARCH BAR AT TOP OF SCREEN*/
-.searchbar {
+.searchBar {
     float: right;
     background-color: #d03237;
     color: white;
