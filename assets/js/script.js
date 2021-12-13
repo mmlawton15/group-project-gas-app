@@ -1,6 +1,6 @@
 
 var mmApiKey = "2e2ca0507dda47fa6f94fa93790f0ec0";
-var currentWeather;
+var zipcodeWeather;
 var userZipcode = document.getElementById("searchBar").value;
 var zipcodeUserSearchesFor;
 
@@ -39,7 +39,18 @@ document.querySelector("#btnSearch").addEventListener('click', function() {
 
 //CODE FOR WEATHER ALERT
 var getSearchedZipcodeWeather = function() {
-    var currentWeather = fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${zipcodeUserSearchesFor}&units=imperial&appid=${myApiKey}`)
-    console.log(currentWeather);
+    var zipcodeWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${zipcodeUserSearchesFor}&units=imperial&appid=${mmApiKey}`)
+    .then(function(zipcodeUserSearchesFor) {
+        if (zipcodeUserSearchesFor.status !==200) {
+            console.log("there was a problem, status code: " + zipcodeUserSearchesFor.status)
+        }
+        zipcodeUserSearchesFor.json().then(function(data) {
+            console.log(data)
+        });
+    })
+    .catch(function(err) {
+        console.log("Fetch error :-S", err);
+    })
+    console.log(zipcodeWeather);
 }
 
