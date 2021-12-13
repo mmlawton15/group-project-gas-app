@@ -11,7 +11,7 @@ At this link: https://mmlawton15.github.io/group-project-gas-guru/
 
 ## What does it look like?
 ![image](assets/Gas-Guru-Screen-1.jpg)
-
+ 
 ## USER STORY
 AS someone who drives alot for work
 I WANT to know where to buy the cheapest gas
