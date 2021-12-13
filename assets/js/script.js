@@ -5,7 +5,7 @@ var userZipcode = document.getElementById("searchBar").value;
 var zipcodeUserSearchesFor;
 
 
-//CODE FOR BUTTON TO LOG VALUE
+//CODE FOR FIRST GO BUTTON TO MAKE SECTIONS VISIBLE AND CONSOLE LOG THE USER ZIPCODE
 document.querySelector("#btnSearch").addEventListener('click', function() {
     console.log(userZipcode);
     zipcodeUserSearchesFor = userZipcode;
@@ -19,11 +19,17 @@ document.querySelector("#btnSearch").addEventListener('click', function() {
     }
 
     //MAKE THE OTHER SECTIONS VISIBLE
-    const gasStationSection = document.getElementById("gasStationResultHeader")
-    if (gasStationSection.style.display ==='none') {
-        gasStationSection.style.display = 'block';
+    const gasStationSection = document.getElementById("gasStationSection")
+    if (gasStationSection.style.display ==="block") {
+        gasStationSection.style.display = "none";
     } else {
-        gasStationSection.style.display == 'none';
+        gasStationSection.style.display = "block";
+    }
+    const resultsSection = document.getElementById("resultsSection")
+    if (resultsSection.style.display ==="block") {
+        resultsSection.style.display = "none";
+    } else {
+        resultsSection.style.display = "block";
     }
     getSearchedZipcodeWeather();
 })
@@ -33,7 +39,7 @@ document.querySelector("#btnSearch").addEventListener('click', function() {
 
 //CODE FOR WEATHER ALERT
 var getSearchedZipcodeWeather = function() {
-    var currentWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${zipcodeUserSearchesFor}&units=imperial&appid=${mmApiKey}`)
+    var currentWeather = fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${zipcodeUserSearchesFor}&units=imperial&appid=${myApiKey}`)
     console.log(currentWeather);
 }
 

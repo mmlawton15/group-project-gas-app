@@ -83,7 +83,20 @@ body {
   font-size: 25px;
 }
 
-/*GAS STATION SECTION*/
+/*GAS STATION/RESULTS SECTION*/
+
+.resultsSection {
+  display:none;
+}
+
 .gasStationSection {
   display: none;
+}
+
+.gasStationResults {
+  width:auto;
+  height:25px;
+  background-color: white;
+  color:black;
+  margin-bottom:15px;
 }
