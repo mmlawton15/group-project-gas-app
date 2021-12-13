@@ -9,7 +9,8 @@ var zipcodeUserSearchesFor;
 document.querySelector("#btnSearch").addEventListener('click', function() {
     console.log(userZipcode);
     zipcodeUserSearchesFor = userZipcode;
-    
+    console.log(zipcodeUserSearchesFor.value);
+
     //SHOW/HIDE INITIAL SEARCH BAR
     const initialSearchBar = document.getElementById("initialSearchBar")
     if (initialSearchBar.style.display !=="none") {
@@ -39,7 +40,7 @@ document.querySelector("#btnSearch").addEventListener('click', function() {
 
 //CODE FOR WEATHER ALERT
 var getSearchedZipcodeWeather = function() {
-    var zipcodeWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${zipcodeUserSearchesFor}&units=imperial&appid=${mmApiKey}`)
+    var zipcodeWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcodeUserSearchesFor},us&appid=${mmApiKey}`)
     .then(function(zipcodeUserSearchesFor) {
         if (zipcodeUserSearchesFor.status !==200) {
             console.log("there was a problem, status code: " + zipcodeUserSearchesFor.status)
