@@ -10,7 +10,7 @@
 
 <!--MAIN SECTION OF PAGE-->
   <body>
-    <section class="container">
+    <section class="container" id="initialSearchBar">
       <h1>Gas Guru</h1>
       <div class="container">
         <form>
@@ -21,13 +21,13 @@
           placeholder="Search"
         />
         </form>
-        <a id="btnSearch" class="btn-search"><i class="fa fa-search"></i></a>
-        <a id="btnSearch" class="buttonStyle">Go!</a>
+        <button id="btnSearch" class="btn-search">Go!</button>
       </div>
     </section>
 
 
-    <section class="container" id="resultsSection">
+    <!--SEARCH BAR AT TOP OF RESULTS SECTION-->
+    <!-- <section class="container" id="resultsSection">
       <h1>Search Another Zip:</h1>
       <div class="container">
         <form>
@@ -35,12 +35,12 @@
         </form>
         <a id="btnSearch" class="buttonStyle" href="results.html">Go!</a>
       </div>
-    </section>
+    </section> -->
 
   
   <!--RESULTS AREA OF PAGE-->
-      <div id="gasStationSection" class="gasStationStyle">
-          <h1>Gas Stations In Your Area</h1><br>
+      <div id="gasStationSection" class="gasStationSection">
+          <h1 id="gasStationResultHeader">Gas Stations In Your Area</h1><br>
           <h4 class="alertClass" id="alertField">ALERT!</h4>
           <div class="gasStationResults" id=""></div>
           <div class="gasStationResults" id=""></div>
@@ -48,6 +48,7 @@
           <div class="gasStationResults" id=""></div>
           <div class="gasStationResults" id=""></div>
       </div>
+
   <script src="assets/js/script.js"></script>
   </body>
 </html>

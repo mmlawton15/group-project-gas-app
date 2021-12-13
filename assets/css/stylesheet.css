@@ -82,3 +82,8 @@ body {
   font-weight: bold;
   font-size: 25px;
 }
+
+/*GAS STATION SECTION*/
+.gasStationSection {
+  display: none;
+}
