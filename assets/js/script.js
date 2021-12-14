@@ -1,15 +1,14 @@
 
 var mmApiKey = "2e2ca0507dda47fa6f94fa93790f0ec0";
 var zipcodeWeather;
-var userZipcode = document.getElementById("searchBar").value;
 var zipcodeUserSearchesFor;
-
 
 //CODE FOR FIRST GO BUTTON TO MAKE SECTIONS VISIBLE AND CONSOLE LOG THE USER ZIPCODE
 document.querySelector("#btnSearch").addEventListener('click', function() {
+    var userZipcode = document.getElementById("searchBar").value;
     console.log(userZipcode);
     zipcodeUserSearchesFor = userZipcode;
-    console.log(zipcodeUserSearchesFor.value);
+    console.log(zipcodeUserSearchesFor);
 
     //SHOW/HIDE INITIAL SEARCH BAR
     const initialSearchBar = document.getElementById("initialSearchBar")
