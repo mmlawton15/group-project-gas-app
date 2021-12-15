@@ -4,7 +4,7 @@ var zipcodeWeather;
 var zipcodeUserSearchesFor;
 
 //CODE FOR FIRST GO BUTTON TO MAKE SECTIONS VISIBLE AND CONSOLE LOG THE USER ZIPCODE
-document.querySelector("#btnSearch").addEventListener('click', function() {
+document.querySelector("#btnSearch1").addEventListener('click', function() {
     var userZipcode = document.getElementById("searchBar").value;
     console.log(userZipcode);
     zipcodeUserSearchesFor = userZipcode;
