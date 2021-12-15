@@ -1,0 +1,39 @@
+/*MM IS WORKING ON THIS*/
+
+:root {
+    --primary-color:#d03237;
+    --secondary-color: white;
+    --tertiary-color: black;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+}
+
+.gasStationStyle {
+    background-color: #d03237;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+div {
+    background-color: white;
+    width: 40%;
+    height: 65px;
+    border-radius: 25px;
+    margin-top:15px;
+    padding:10px;
+    text-align: center;
+}
+
