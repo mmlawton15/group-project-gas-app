@@ -42,10 +42,12 @@ var getSearchedZipcodeWeather = function() {
     var zipcodeWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcodeUserSearchesFor},us&appid=${mmApiKey}`)
     .then(function(zipcodeUserSearchesFor) {
         if (zipcodeUserSearchesFor.status !==200) {
-            console.log("there was a problem, status code: " + zipcodeUserSearchesFor.status)
+            console.log("there was a problem, status code: " + zipcodeUserSearchesFor.status);
+            return;
         }
         zipcodeUserSearchesFor.json().then(function(data) {
             console.log(data)
+            document.querySelector("#alertField").textContent = ("ALERT! The current weather is " +data.weather[0].main+ ". Drive safe!")
         });
     })
     .catch(function(err) {
