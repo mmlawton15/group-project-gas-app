@@ -36,5 +36,5 @@ THESE gas stations have prices of gas listed next to them and a descriptive titl
 - ~~Use at least 2 server-side APIs~~
 - ~~Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation quality comments, etc)~~
 - ~~Have a quality README with a unique name, description, technologies used, screenshot, and link to deployed application~~
-- Use a CSS Framework other than Bootstrap
+- ~~Use a CSS Framework other than Bootstrap~~
 - Use client-side storage to store persistent data
