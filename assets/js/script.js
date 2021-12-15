@@ -5,7 +5,7 @@ var zipcodeUserSearchesFor;
 
 //CODE FOR FIRST GO BUTTON TO MAKE SECTIONS VISIBLE AND CONSOLE LOG THE USER ZIPCODE
 document.querySelector("#btnSearch1").addEventListener('click', function() {
-    var userZipcode = document.getElementById("searchBar").value;
+    var userZipcode = document.getElementById("searchBar1").value;
     console.log(userZipcode);
     zipcodeUserSearchesFor = userZipcode;
     console.log(zipcodeUserSearchesFor);
@@ -31,9 +31,20 @@ document.querySelector("#btnSearch1").addEventListener('click', function() {
     } else {
         resultsSection.style.display = "block";
     }
+    document.querySelector("#gasStationHeader").textContent = ("Gas Stations Around " + zipcodeUserSearchesFor + ":");
     getSearchedZipcodeWeather();
 })
 
+
+//CODE FOR THE 2ND GO BUTTON
+document.querySelector("#btnSearch2").addEventListener('click', function() {
+    var userZipcode = document.getElementById("searchBar2").value;
+    console.log(userZipcode);
+    zipcodeUserSearchesFor = userZipcode;
+    console.log(zipcodeUserSearchesFor);
+    document.querySelector("#gasStationHeader").textContent = ("Gas Stations Around " + zipcodeUserSearchesFor + ":");
+    getSearchedZipcodeWeather();
+})
 
 
 
