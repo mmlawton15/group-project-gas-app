@@ -54,7 +54,7 @@ var getSearchedZipcodeWeather = function () {
   console.log(zipcodeWeather);
 };
 
-//Allows Gas stations to be called from the fuel prices api when a zipcode is searched
+// Fetches gas station prices for individual cities
 fetch("https://gas-price.p.rapidapi.com/stateUsaPrice?state=NC", {
   method: "GET",
   headers: {
