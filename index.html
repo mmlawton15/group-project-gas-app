@@ -5,21 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gas Guru</title>
-    <link rel="stylesheet" href="assets/stylesheet.css" />
+    <link rel="stylesheet" href="assets/css/stylesheet.css" />
   </head>
 
+<!--MAIN SECTION OF PAGE-->
   <body>
-    <section class="container">
+    <section class="container" id="initialSearchBar">
       <h1>Gas Guru</h1>
       <div class="container">
+        <form>
         <input
           id="searchBar"
           class="searchbar"
           type="text"
           placeholder="Search"
         />
-        <a id="btnSearch" class="btn-search"><i class="fa fa-search"></i></a>
+        </form>
+        <button id="btnSearch" class="btn-search">Go!</button>
       </div>
     </section>
+
+
+    <!--SEARCH BAR AT TOP OF RESULTS SECTION-->
+    <section class="resultsSection" id="resultsSection">
+      <h1>Search Another Zip:</h1>
+      <div class="container">
+        <form>
+          <input id="searchBar" class="searchBar" type="text"/>
+        </form>
+        <a id="btnSearch" class="buttonStyle" href="results.html">Go!</a>
+      </div>
+    </section>
+
+  
+  <!--RESULTS AREA OF PAGE-->
+    <section id="gasStationSection" class="gasStationSection">
+      <div>
+          <h1 id="">Gas Stations In Your Area</h1><br>
+          <h4 class="alertClass" id="alertField">Drive Safely! The current weather in your area is</h4>
+          <div class="gasStationResults" id=""></div>
+          <div class="gasStationResults" id=""></div>
+          <div class="gasStationResults" id=""></div>
+          <div class="gasStationResults" id=""></div>
+          <div class="gasStationResults" id=""></div>
+      </div>
+    </section>
+
+  <script src="assets/js/script.js"></script>
   </body>
 </html>

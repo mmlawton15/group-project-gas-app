@@ -16,7 +16,7 @@ body {
 }
 
 .gasStationStyle {
-    background-color: white;
+    background-color: #d03237;
     margin-top: 20px;
 }
 
@@ -34,4 +34,6 @@ div {
     border-radius: 25px;
     margin-top:15px;
     padding:10px;
+    text-align: center;
 }
+
