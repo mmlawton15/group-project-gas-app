@@ -3,11 +3,12 @@ var zipcodeWeather;
 var zipcodeUserSearchesFor;
 
 //CODE FOR FIRST GO BUTTON TO MAKE SECTIONS VISIBLE AND CONSOLE LOG THE USER ZIPCODE
-document.querySelector("#btnSearch").addEventListener("click", function () {
-  var userZipcode = document.getElementById("searchBar").value;
+document.querySelector("#btnSearch1").addEventListener('click', function () {
+  var userZipcode = document.getElementById("searchBar1").value;
   console.log(userZipcode);
   zipcodeUserSearchesFor = userZipcode;
   console.log(zipcodeUserSearchesFor);
+  document.querySelector("#gasStationHeader").textContent = ("Gas Stations Around " + zipcodeUserSearchesFor + ":");
 
   //SHOW/HIDE INITIAL SEARCH BAR
   const initialSearchBar = document.getElementById("initialSearchBar");
@@ -33,26 +34,37 @@ document.querySelector("#btnSearch").addEventListener("click", function () {
   getSearchedZipcodeWeather();
 });
 
+
+//CODE FOR THE 2ND GO BUTTON
+document.querySelector("#btnSearch2").addEventListener('click', function() {
+  var userZipcode = document.getElementById("searchBar2").value;
+  console.log(userZipcode);
+  zipcodeUserSearchesFor = userZipcode;
+  console.log(zipcodeUserSearchesFor);
+  document.querySelector("#gasStationHeader").textContent = ("Gas Stations Around " + zipcodeUserSearchesFor + ":");
+  getSearchedZipcodeWeather();
+})
+
+
+
 //CODE FOR WEATHER ALERT
-var getSearchedZipcodeWeather = function () {
-  var zipcodeWeather = fetch(
-    `https://api.openweathermap.org/data/2.5/weather?zip=${zipcodeUserSearchesFor},us&appid=${mmApiKey}`
-  )
-    .then(function (zipcodeUserSearchesFor) {
-      if (zipcodeUserSearchesFor.status !== 200) {
-        console.log(
-          "there was a problem, status code: " + zipcodeUserSearchesFor.status
-        );
+var getSearchedZipcodeWeather = function() {
+  var zipcodeWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcodeUserSearchesFor},us&appid=${mmApiKey}`)
+  .then(function(zipcodeUserSearchesFor) {
+      if (zipcodeUserSearchesFor.status !==200) {
+          console.log("there was a problem, status code: " + zipcodeUserSearchesFor.status);
+          return;
       }
-      zipcodeUserSearchesFor.json().then(function (data) {
-        console.log(data);
+      zipcodeUserSearchesFor.json().then(function(data) {
+          console.log(data)
+          document.querySelector("#alertField").textContent = ("ALERT! The current weather is " +data.weather[0].main+ ". Drive safe!")
       });
-    })
-    .catch(function (err) {
+  })
+  .catch(function(err) {
       console.log("Fetch error :-S", err);
-    });
+  })
   console.log(zipcodeWeather);
-};
+}
 
 // Fetches gas station prices for individual cities
 fetch("https://gas-price.p.rapidapi.com/stateUsaPrice?state=NC", {
