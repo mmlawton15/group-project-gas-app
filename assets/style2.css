@@ -14,8 +14,13 @@ body {
 }
 
 .gasStationStyle {
+<<<<<<< HEAD
   background-color: #d03237;
   margin-top: 20px;
+=======
+    background-color: #d03237;
+    margin-top: 20px;
+>>>>>>> develop
 }
 
 .container {
@@ -26,6 +31,7 @@ body {
 }
 
 div {
+<<<<<<< HEAD
   background-color: white;
   width: 40%;
   height: 65px;
@@ -34,3 +40,14 @@ div {
   padding: 10px;
   text-align: center;
 }
+=======
+    background-color: white;
+    width: 40%;
+    height: 65px;
+    border-radius: 25px;
+    margin-top:15px;
+    padding:10px;
+    text-align: center;
+}
+
+>>>>>>> develop

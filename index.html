@@ -5,53 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gas Guru</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
   </head>
 
-  <!--MAIN SECTION OF PAGE-->
+<!--MAIN SECTION OF PAGE-->
   <body>
     <section class="container" id="initialSearchBar">
       <h1>Gas Guru</h1>
       <div class="container">
         <form>
-          <input
-            id="searchBar"
-            class="searchbar"
-            type="text"
-            placeholder="Search"
-          />
+        <input
+          id="searchBar1"
+          class="searchbar"
+          type="text"
+          placeholder="Search"
+        />
         </form>
-        <button id="btnSearch" class="btn-search">Go!</button>
+        <button id="btnSearch1" class="pure-button">Go!</button>
       </div>
     </section>
+
 
     <!--SEARCH BAR AT TOP OF RESULTS SECTION-->
     <section class="resultsSection" id="resultsSection">
-      <h1>Search Another Zip:</h1>
-      <div class="container">
+      <span class="container">
+        <h1>Search Another Zip:</h1>
         <form>
-          <input id="searchBar" class="searchBar" type="text" />
+          <input id="searchBar2" class="searchBar" type="text"/>
         </form>
-        <a id="btnSearch" class="buttonStyle" href="results.html">Go!</a>
-      </div>
+        <button id="btnSearch2" class="pure-button">Go!</button>
+      </span>
     </section>
 
-    <!--RESULTS AREA OF PAGE-->
+  
+  <!--RESULTS AREA OF PAGE-->
     <section id="gasStationSection" class="gasStationSection">
       <div>
-        <h1 id="">Gas Stations In Your Area</h1>
-        <br />
-        <h4 class="alertClass" id="alertField">
-          Drive Safely! The current weather in your area is
-        </h4>
-        <div class="gasStationResults" id=""></div>
-        <div class="gasStationResults" id=""></div>
-        <div class="gasStationResults" id=""></div>
-        <div class="gasStationResults" id=""></div>
-        <div class="gasStationResults" id=""></div>
+          <h1 id="gasStationHeader">Gas Stations Around</h1><br>
+          <h4 class="alertClass" id="alertField">Drive Safely! The current weather in your area is</h4>
+          <div class="gasStationResults" id=""></div>
+          <div class="gasStationResults" id=""></div>
+          <div class="gasStationResults" id=""></div>
+          <div class="gasStationResults" id=""></div>
+          <div class="gasStationResults" id=""></div>
       </div>
     </section>
 
-    <script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
   </body>
 </html>
