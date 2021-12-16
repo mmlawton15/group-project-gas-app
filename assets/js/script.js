@@ -72,3 +72,8 @@ fetch("https://gas-price.p.rapidapi.com/stateUsaPrice?state=NC", {
   .catch((err) => {
     console.error(err);
   });
+
+var gasResultsDiv = document.getElementById("gasStationResults");
+var resultsContent = document.createTextNode("res.json");
+
+gasResultsDiv.appendChild(resultsContent);
