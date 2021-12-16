@@ -1,14 +1,14 @@
 var mmApiKey = "2e2ca0507dda47fa6f94fa93790f0ec0";
-var zipcodeWeather;
-var zipcodeUserSearchesFor;
+var cityWeather;
+var cityUserSearchesFor;
 
-//CODE FOR FIRST GO BUTTON TO MAKE SECTIONS VISIBLE AND CONSOLE LOG THE USER ZIPCODE
+//CODE FOR FIRST GO BUTTON TO MAKE SECTIONS VISIBLE AND CONSOLE LOG THE USER CITY
 document.querySelector("#btnSearch1").addEventListener('click', function () {
-  var userZipcode = document.getElementById("searchBar1").value;
-  console.log(userZipcode);
-  zipcodeUserSearchesFor = userZipcode;
-  console.log(zipcodeUserSearchesFor);
-  document.querySelector("#gasStationHeader").textContent = ("Gas Stations Around " + zipcodeUserSearchesFor + ":");
+  var userCity = document.getElementById("searchBar1").value;
+  console.log(userCity);
+  cityUserSearchesFor = userCity;
+  console.log(cityUserSearchesFor);
+  document.querySelector("#gasStationHeader").textContent = ("Gas Stations Around " + cityUserSearchesFor + ":");
 
   //SHOW/HIDE INITIAL SEARCH BAR
   const initialSearchBar = document.getElementById("initialSearchBar");
@@ -31,31 +31,31 @@ document.querySelector("#btnSearch1").addEventListener('click', function () {
   } else {
     resultsSection.style.display = "block";
   }
-  getSearchedZipcodeWeather();
+  getSearchedcityWeather();
 });
 
 
 //CODE FOR THE 2ND GO BUTTON
 document.querySelector("#btnSearch2").addEventListener('click', function() {
-  var userZipcode = document.getElementById("searchBar2").value;
-  console.log(userZipcode);
-  zipcodeUserSearchesFor = userZipcode;
-  console.log(zipcodeUserSearchesFor);
-  document.querySelector("#gasStationHeader").textContent = ("Gas Stations Around " + zipcodeUserSearchesFor + ":");
-  getSearchedZipcodeWeather();
+  var userCity = document.getElementById("searchBar2").value;
+  console.log(userCity);
+  cityUserSearchesFor = userCity;
+  console.log(cityUserSearchesFor);
+  document.querySelector("#gasStationHeader").textContent = ("Gas Stations Around " + cityUserSearchesFor + ":");
+  getSearchedcityWeather();
 })
 
 
 
 //CODE FOR WEATHER ALERT
-var getSearchedZipcodeWeather = function() {
-  var zipcodeWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcodeUserSearchesFor},us&appid=${mmApiKey}`)
-  .then(function(zipcodeUserSearchesFor) {
-      if (zipcodeUserSearchesFor.status !==200) {
-          console.log("there was a problem, status code: " + zipcodeUserSearchesFor.status);
+var getSearchedcityWeather = function() {
+  var cityWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityUserSearchesFor},us&appid=${mmApiKey}`)
+  .then(function(cityUserSearchesFor) {
+      if (cityUserSearchesFor.status !==200) {
+          console.log("there was a problem, status code: " + cityUserSearchesFor.status);
           return;
       }
-      zipcodeUserSearchesFor.json().then(function(data) {
+      cityUserSearchesFor.json().then(function(data) {
           console.log(data)
           document.querySelector("#alertField").textContent = ("ALERT! The current weather is " +data.weather[0].main+ ". Drive safe!")
       });
@@ -63,7 +63,7 @@ var getSearchedZipcodeWeather = function() {
   .catch(function(err) {
       console.log("Fetch error :-S", err);
   })
-  console.log(zipcodeWeather);
+  console.log(cityWeather);
 }
 
 // Fetches gas station prices for individual cities
