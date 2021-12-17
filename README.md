@@ -1,5 +1,5 @@
 ## What is this project?
-Gas Guru is an application that looks for the nearest gas stations around the city the user has provided and lists out the prices of of each gas station nad their location, from there they can choose what gas station works for them.
+Gas Guru is an application that looks for nearest gas stations in the users area using a zip code they type in the search box provided when the page is initally loaded, 
 
 ## What is the point of this project?
 Cheaper gas! The worst thing is when you get some expensive gas and you drive by another gas station and the gas is cheaper! Every cent counts, we wanted it to be easier to find the cheapest gas around the area so you can save a little bit of money, and also not only can you find the nearest gas station in your area but it also you tells you how the weather will look like on the way there, just anohter way of making your life easier!
@@ -14,7 +14,7 @@ Cheaper gas! The worst thing is when you get some expensive gas and you drive by
 At this link: https://mmlawton15.github.io/group-project-gas-guru/
 
 ## What does it look like?
-![image](assets/images/GasGuru.jpg)
+![image](assets/images/Gas-Guru-Screen-1.jpg)
 
 ## USER STORY
 AS someone who drives alot for work

@@ -81,6 +81,7 @@ body {
   background-color: #d03237;
   font-weight: bold;
   font-size: 25px;
+<<<<<<< HEAD:assets/css/stylesheet.css
 }
 
 /*GAS STATION/RESULTS SECTION*/
@@ -88,6 +89,16 @@ body {
   display:none;
 }
 
+=======
+}
+
+/*GAS STATION/RESULTS SECTION*/
+
+.resultsSection {
+  display:none;
+}
+
+>>>>>>> develop:assets/stylesheet.css
 .gasStationSection {
   display: none;
 }
