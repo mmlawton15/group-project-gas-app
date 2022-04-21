@@ -8,7 +8,7 @@ Cheaper gas! The worst thing is when you get some expensive gas and you drive by
 Frontend:
 - HTML
 - CSS
-- Pure
+- Pure Framework
 
 Backend:
 - Web APIs for pulling weather data and gas station data
